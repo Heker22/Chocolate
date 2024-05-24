@@ -5,4 +5,21 @@
 --section-background-:#1E1823;
 --button-color:#FD9222;
 }
+.header{
+    padding-top: 24px;
+    padding-bottom: 72px;
+    font-family: "Montserrat", sans-serif;
+}
 
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    gap: 24px;
+    margin-left: 188px;
+}
+.nav-icon{
+    fill: var(-);
+}
