@@ -48,3 +48,11 @@
 .nav-icon:focus {
     stroke: var(--button-color);
 }
+.hero{
+    padding-top: 381px;
+    padding-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/choco-backgound.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
