@@ -7,7 +7,7 @@
     --background-color-general: #fafafa;
 }
 
-.body {
+body {
     background-color: var(--background-color-general);
 }
 
@@ -304,8 +304,27 @@
 .made-wrap {
     border-radius: 15px;
     background-color: var(--background-color);
+    padding: 32px;
 }
-.made-list{
+
+.made-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 28px;
+}
+
+.made-list {
+    list-style: square;
+}
+
+.made-item {
+    margin-bottom: 24px;
+}
+.made-box{
     display: flex;
-    flex-direction: column;
+    gap: 40px;
+}
+.made-video{
+    border-radius: 15px ;
 }
