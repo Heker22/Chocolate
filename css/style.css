@@ -467,17 +467,20 @@ body {
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     text-transform: uppercase;
 }
-.choco-word{
+
+.choco-word {
     color: var(--button-color);
 }
-.choco-list{
+
+.choco-list {
     display: flex;
     gap: 28px;
 }
-.choco-item{
+
+.choco-item {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     padding: 56px 24px 42px 24px;
@@ -485,8 +488,39 @@ body {
     margin-bottom: 82px;
     position: relative;
 }
-.choco-photo{
+
+.choco-photo {
     position: absolute;
-    bottom: 50%;
-    left: 180px;
+    top: -40px;
+    left: 140px;
+}
+
+.choco-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.choco-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+}
+
+.choco-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    border: 1px solid var(--button-color);
+    border-radius: 100px;
+    padding: 14px 40px;
+}
+
+.choco-btn:hover,
+.choco-btn:focus {
+    background-color: var(--button-color);
+    color: var(--background-color);
 }
