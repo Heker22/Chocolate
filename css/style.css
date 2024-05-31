@@ -393,3 +393,57 @@ body {
     font-size: 14px;
     margin-top: 18px;
 }
+
+.sellers {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.sellers-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.sellers-word {
+    color: var(--button-color);
+}
+
+.sellers-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.sellers-wrap {
+    display: flex;
+    gap: 567px;
+}
+
+.sellers-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+}
+
+.sellers-btn {
+    color: var(--background-color);
+    background-color: var(--button-color);
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 100px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: inline-block;
+    width: 200px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: none;
+}
