@@ -572,3 +572,64 @@ body {
     background-color: var(--background-color);
     color: var(--button-color);
 }
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--section-background);
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    color: var(--background-color);
+}
+
+.footer-word {
+    color: var(--button-color);
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link-word {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.footer-link-list {
+    margin-top: 14px;
+}
+
+.footer-list-item {
+    color: var(--background-color);
+    margin-bottom: 4px;
+}
+
+.footer-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.footer-link-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.icon-footer {
+    width: 24px;
+    height: 24px;
+    stroke: var(--background-color);
+}
