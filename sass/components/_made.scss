@@ -1,0 +1,53 @@
+.made {
+    padding-top: 128px;
+    padding-bottom: 41px;
+    font-family: "Montserrat", sans-serif;
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: $text-color;
+        padding-bottom: 50px;
+    }
+
+    &__word {
+        color: $button-color;
+    }
+
+    &__wrap {
+        border-radius: 15px;
+        background-color: $background-color;
+        padding: 32px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 133%;
+        margin-bottom: 28px;
+    }
+
+    &__list {
+        list-style: square;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__box {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    &__video {
+        border-radius: 15px;
+        width: 600px;
+    }
+
+}

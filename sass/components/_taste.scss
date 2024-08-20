@@ -1,0 +1,79 @@
+.taste {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    font-family: "Montserrat", sans-serif;
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: $text-color;
+        margin-bottom: 28px;
+    }
+
+    &__word {
+        color: $button-color;
+    }
+
+    &__text {
+        width: 486px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 19px;
+        color: $background-color;
+    }
+
+    &__item {
+        border-radius: 15px;
+        background-color: $button-color;
+        padding: 28px 36px 28px 28px;
+        border: 1px solid $button-color;
+
+    }
+
+    &__item:nth-child(2) {
+        border-radius: 15px;
+        background-color: $background-color;
+        padding: 28px 36px 28px 28px;
+        border: 1px solid $button-color;
+        color: $text-color;
+    }
+
+    &__item:nth-child(3) {
+        border-radius: 15px;
+        background-color: $section-background;
+        padding: 28px 36px 28px 28px;
+        border: 1px solid $section-background;
+    }
+
+    &__item:nth-child(4) {
+        border-radius: 15px;
+        background-color: $background-color;;
+        padding: 28px 36px 28px 28px;
+        border: 1px solid $button-color;
+        color: $text-color;
+    }
+
+    &__img {
+        margin-bottom: 36px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+    }
+}
