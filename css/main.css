@@ -413,28 +413,28 @@ button {
   border: 1px solid #FD9222;
 }
 
-.chocolate {
+.choco {
   padding-bottom: 128px;
   font-family: "Montserrat", sans-serif;
 }
-.chocolate__title {
+.choco__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #111111;
   margin-bottom: 90px;
   text-transform: uppercase;
 }
-.chocolate__word {
-  color: var(--button-color);
+.choco__word {
+  color: #FD9222;
 }
-.chocolate__list {
+.choco__list {
   display: flex;
   gap: 28px;
 }
-.chocolate__item {
+.choco__item {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   padding: 56px 24px 42px 24px;
@@ -442,35 +442,35 @@ button {
   margin-bottom: 82px;
   position: relative;
 }
-.chocolate__photo {
+.choco__photo {
   position: absolute;
   top: -40px;
   left: 140px;
 }
-.chocolate__subtitle {
+.choco__subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
   margin-bottom: 24px;
   text-align: center;
 }
-.chocolate__text {
+.choco__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
   text-align: center;
 }
-.chocolate__btn {
+.choco__btn {
   display: block;
   margin: 0 auto;
-  background-color: var(--background-color);
-  border: 1px solid var(--button-color);
+  background-color: #fff;
+  border: 1px solid #FD9222;
   border-radius: 100px;
   padding: 14px 40px;
 }
-.chocolate:hover, .chocolate:focus {
-  background-color: var(--button-color);
-  color: var(--background-color);
+.choco__btn:hover, .choco__btn:focus {
+  background-color: #FD9222;
+  color: #fff;
 }
 
 .explore {
@@ -513,5 +513,104 @@ button {
 .explore__btn:hover, .explore__btn:focus {
   border: 1px solid #FD9222;
   background-color: #fff;
+  color: #FD9222;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1E1823;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-word {
+  color: #FD9222;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 58px;
+}
+
+.footer-link-word {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-link-list {
+  margin-top: 14px;
+}
+
+.footer-list-item {
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.footer-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: #FD9222;
+}
+
+.footer-link-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon-footer {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  margin-top: 10px;
+}
+
+.footer-logo-wrap {
+  display: flex;
+  margin-left: 63px;
+  gap: 18px;
+  width: 66px;
+  justify-content: space-between;
+}
+
+.footer-box {
+  padding-top: 24px;
+}
+
+.footer-box-list {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-box-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-box-link:hover,
+.footer-box-link:focus {
   color: #FD9222;
 }/*# sourceMappingURL=main.css.map */
