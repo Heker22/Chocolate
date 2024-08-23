@@ -33,9 +33,6 @@
         color: $background-color;
     }
 
-    &__link-list {
-        margin-top: 14px;
-    }
 
     &__list-item {
         color: $background-color;
@@ -75,12 +72,36 @@
         display: flex;
         margin-left: 63px;
         gap: 18px;
-        width: 66px;
         justify-content: space-between;
     }
 
     &__icon {
         fill: $background-color;
+        width: 24px;
+        height: 24px;
+
+        &:hover,
+        &:focus {
+            fill: $button-color;
+        }
+    }
+
+    &__icon-twitter {
+        stroke: $background-color;
+        fill: $section-background;
+        width: 24px;
+        height: 24px;
+
+        &:hover,
+        &:focus {
+            stroke: $button-color;
+            fill: $section-background;
+
+        }
+    }
+
+    &__link-icon {
+        cursor: pointer;
     }
 
     &__box {
