@@ -1,17 +1,18 @@
 .footer {
     font-family: "Montserrat", sans-serif;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background-color: $section-background;
 
 
 
     &__title {
         font-weight: 500;
-        font-size: 28px;
-        line-height: 121%;
+        font-size: 24px;
+        line-height: 117%;
         letter-spacing: -0.02em;
         color: $background-color;
+        margin-bottom: 32px;
     }
 
     &__word {
@@ -19,10 +20,8 @@
     }
 
     &__wrap {
-        display: flex;
-        justify-content: space-between;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: 58px;
+        padding-bottom: 32px;
     }
 
     &__link-word {
@@ -31,6 +30,7 @@
         line-height: 129%;
         text-align: center;
         color: $background-color;
+        display: block;
     }
 
 
@@ -40,12 +40,14 @@
     }
 
     &__tel {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 129%;
-        letter-spacing: -0.02em;
         text-align: center;
         color: $background-color;
+        margin-bottom: 4px;
+        display: block;
+        margin-top: 14px;
 
         &:hover,
         &:focus {
@@ -58,7 +60,7 @@
     &__link-wrap {
         display: flex;
         align-items: flex-start;
-
+        justify-content: space-between;
     }
 
     &__footer {
