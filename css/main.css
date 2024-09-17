@@ -67,6 +67,7 @@ button {
   letter-spacing: -0.02em;
   color: #111111;
   cursor: pointer;
+  transition: color 250ms ease;
 }
 .header__link:hover, .header__link:focus {
   color: #FD9222;
@@ -76,8 +77,9 @@ button {
   height: 24px;
   stroke-width: 1px;
   stroke: #111111;
-  fill: var(--background-color);
+  fill: #fff;
   margin-left: 18px;
+  transition: stroke 250ms ease;
 }
 .header__icon:hover, .header__icon:focus {
   stroke: #FD9222;
@@ -116,6 +118,7 @@ button {
   margin-left: 20px;
   margin-right: 14px;
   cursor: pointer;
+  transition: border 250ms ease, color 250ms ease;
 }
 .hero__btn:hover, .hero__btn:focus {
   border: 1px solid #FD9222;
@@ -130,6 +133,7 @@ button {
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: border 250ms ease, color 250ms ease;
 }
 .hero__btn-second:hover, .hero__btn-second:focus {
   border: 1px solid #FD9222;
@@ -289,55 +293,6 @@ button {
     margin-bottom: 51px;
   }
 }
-/*.info {
-    background-color: $section-background;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 50px;
-    padding-bottom: 68px;
-
-
-    &__list {
-        display: flex;
-        gap: 70px;
-    }
-
-    &__item:not(:last-child) {
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
-        margin-left: 18px;
-        padding-right: 18px;
-    }
-
-    &__icon {
-        width: 32px;
-        height: 32px;
-        fill: $button-color;
-    }
-
-    &__wrap {
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        width: 62px;
-        height: 62px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 22px;
-    }
-
-    &__title {
-        font-weight: 600;
-        font-size: 18px;
-        margin-bottom: 18px;
-        color: $background-color;
-    }
-
-    &__text {
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: -0.02em;
-        color: rgba(255, 255, 255, 0.7);
-    }
-}*/
 .taste {
   padding-bottom: 72px;
   font-family: "Montserrat", sans-serif;
@@ -438,90 +393,43 @@ button {
   }
   .taste__item {
     width: 336px;
+    position: relative;
   }
   .taste__subtitle {
     margin-left: 0px;
   }
+  .product__actions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 23px 28px 33px 28px;
+    background-color: #fff;
+  }
+  .taste__item:hover .product__actions {
+    opacity: 1;
+  }
+  .product__actions-title {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .product__actions-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+  }
+  .product__actions-box {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+  }
 }
-/*.taste {
-    padding-top: 128px;
-    padding-bottom: 128px;
-    font-family: "Montserrat", sans-serif;
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $text-color;
-        margin-bottom: 28px;
-    }
-
-    &__word {
-        color: $button-color;
-    }
-
-    &__text {
-        width: 486px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
-
-    &__list {
-        display: flex;
-        gap: 19px;
-        color: $background-color;
-    }
-
-    &__item {
-        border-radius: 15px;
-        background-color: $button-color;
-        padding: 28px 36px 28px 28px;
-        border: 1px solid $button-color;
-
-    }
-
-    &__item:nth-child(2) {
-        border-radius: 15px;
-        background-color: $background-color;
-        padding: 28px 36px 28px 28px;
-        border: 1px solid $button-color;
-        color: $text-color;
-    }
-
-    &__item:nth-child(3) {
-        border-radius: 15px;
-        background-color: $section-background;
-        padding: 28px 36px 28px 28px;
-        border: 1px solid $section-background;
-    }
-
-    &__item:nth-child(4) {
-        border-radius: 15px;
-        background-color: $background-color;;
-        padding: 28px 36px 28px 28px;
-        border: 1px solid $button-color;
-        color: $text-color;
-    }
-
-    &__img {
-        margin-bottom: 36px;
-    }
-
-    &__subtitle {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 129%;
-        letter-spacing: -0.02em;
-    }
-}*/
 .made {
   /*padding-top: 100px;*/
   /* padding-bottom: 100px;*/
@@ -605,61 +513,6 @@ button {
     width: 600px;
   }
 }
-/*
-.made {
-    padding-top: 128px;
-    padding-bottom: 41px;
-    font-family: "Montserrat", sans-serif;
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $text-color;
-        padding-bottom: 50px;
-    }
-
-    &__word {
-        color: $button-color;
-    }
-
-    &__wrap {
-        border-radius: 15px;
-        background-color: $background-color;
-        padding: 32px;
-    }
-
-    &__subtitle {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 133%;
-        margin-bottom: 28px;
-    }
-
-    &__list {
-        list-style: square;
-    }
-
-    &__item {
-        margin-bottom: 24px;
-    }
-
-    &__box {
-        display: flex;
-        gap: 40px;
-        align-items: flex-start;
-    }
-
-    &__video {
-        border-radius: 15px;
-        width: 600px;
-    }
-
-}
-*/
 .choose {
   font-family: "Montserrat", sans-serif;
   padding-top: 72px;
@@ -749,69 +602,6 @@ button {
     flex-wrap: nowrap;
   }
 }
-/*
-.choose {
-    font-family: "Montserrat", sans-serif;
-    padding-top: 41px;
-    padding-bottom: 128px;
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $text-color;
-        margin-bottom: 50px;
-    }
-
-    &__color {
-        color: $button-color;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__item {
-        padding: 32px 20px 32px 20px;
-        border: 1px solid rgba(17, 17, 17, 0.1);
-        border-radius: 15px;
-        background-color: $background-color;
-        text-align: center;
-    }
-
-    &__subtitle {
-        margin-top: 8px;
-        margin-bottom: 2px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 133%;
-        letter-spacing: -0.02em;
-    }
-
-    &__word {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 117%;
-        letter-spacing: -0.02em;
-        color: rgba(17, 17, 17, 0.7);
-    }
-
-    &__wrap-wrap {
-        border: 1px solid rgba(17, 17, 17, 0.1);
-        border-radius: 100px;
-        padding: 8px 20px;
-        width: 94px;
-        margin: 0 auto;
-        font-weight: 600;
-        font-size: 14px;
-        margin-top: 18px;
-    }
-
-}*/
 .sellers {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 72px;
@@ -862,6 +652,7 @@ button {
   width: 120px;
   border: 1px solid #FD9222;
   margin: 0 auto;
+  transition: color 250ms ease, background-color 250ms ease, border 250ms ease;
 }
 .sellers__btn:hover, .sellers__btn:focus {
   color: #FD9222;
@@ -921,69 +712,6 @@ button {
     padding-left: 40px;
   }
 }
-/*.sellers {
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 128px;
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $text-color;
-        margin-bottom: 50px;
-    }
-
-    &__word {
-        color: $button-color;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 32px;
-    }
-
-    &__wrap {
-        display: flex;
-        gap: 567px;
-    }
-
-    &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        color: $text-color;
-        width: 407px;
-    }
-
-    &__btn {
-        color: $background-color;
-        background-color: $button-color;
-        font-weight: 600;
-        font-size: 18px;
-        border-radius: 100px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        display: inline-block;
-        width: 200px;
-        padding-right: 40px;
-        padding-left: 40px;
-        border: 1px solid $button-color;
-
-        &:hover,
-        &:focus {
-            color: $button-color;
-            background-color: $background-color;
-            border: 1px solid $button-color;
-        }
-    }
-
-
-}*/
 .choco {
   padding-bottom: 72px;
   font-family: "Montserrat", sans-serif;
@@ -1041,6 +769,7 @@ button {
   padding: 12px 28px;
   font-size: 16px;
   font-weight: 400;
+  transition: color 250ms ease, background-color 250ms ease;
 }
 .choco__btn:hover, .choco__btn:focus {
   background-color: #FD9222;
@@ -1089,77 +818,6 @@ button {
     margin-bottom: 82px;
   }
 }
-/*.choco {
-    padding-bottom: 128px;
-    font-family: "Montserrat", sans-serif;
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $text-color;
-        margin-bottom: 90px;
-        text-transform: uppercase;
-    }
-
-    &__word {
-        color: $button-color;
-    }
-
-    &__list {
-        display: flex;
-        gap: 28px;
-    }
-
-    &__item {
-        border: 1px solid rgba(17, 17, 17, 0.1);
-        border-radius: 15px;
-        padding: 56px 24px 42px 24px;
-        width: 360px;
-        margin-bottom: 82px;
-        position: relative;
-    }
-
-    &__photo {
-        position: absolute;
-        top: -40px;
-        left: 140px;
-    }
-
-    &__subtitle {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 133%;
-        margin-bottom: 24px;
-        text-align: center;
-    }
-
-    &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 129%;
-        text-align: center;
-    }
-
-    &__btn {
-        display: block;
-        margin: 0 auto;
-        background-color: $background-color;
-        border: 1px solid $button-color;
-        border-radius: 100px;
-        padding: 14px 40px;
-
-        &:hover,
-        &:focus {
-            background-color: $button-color;
-            color: $background-color;
-        }
-    }
-
-
-}*/
 .explore {
   font-family: "Montserrat", sans-serif;
   padding-top: 62px;
@@ -1200,6 +858,7 @@ button {
   border-radius: 100px;
   display: block;
   margin: 0 auto;
+  transition: color 250ms ease, border 250ms ease, background-color 250ms ease;
 }
 .explore__btn:hover, .explore__btn:focus {
   border: 1px solid #FD9222;
@@ -1224,56 +883,6 @@ button {
     padding: 14px 40px;
   }
 }
-/*.explore {
-    font-family: "Montserrat", sans-serif;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    background-image: url(../img/third-cream.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.03em;
-        text-align: center;
-        color: $background-color;
-        margin-bottom: 24px;
-    }
-
-   &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        margin-bottom: 24px;
-        color:  $background-color;
-    }
-
-    &__btn {
-        font-weight: 600;
-        font-size: 18px;
-        color:  $background-color;
-        background-color: $button-color;
-        border: 1px solid $button-color;
-        padding: 14px 40px 14px 40px;
-        border-radius: 100px;
-        display: block;
-        margin: 0 auto;
-
-        &:hover,
-        &:focus {
-            border: 1px solid $button-color;
-            background-color:  $background-color;
-            color: $button-color;
-        }
-    }
-
-
-}*/
 .footer {
   font-family: "Montserrat", sans-serif;
   padding-top: 32px;
@@ -1316,6 +925,7 @@ button {
   color: #fff;
   margin-bottom: 4px;
   display: block;
+  transition: color 250ms ease;
 }
 .footer__tel:hover, .footer__tel:focus {
   color: #FD9222;
@@ -1335,6 +945,7 @@ button {
   fill: #fff;
   width: 24px;
   height: 24px;
+  transition: fill 250ms ease;
 }
 .footer__icon:hover, .footer__icon:focus {
   fill: #FD9222;
@@ -1344,6 +955,7 @@ button {
   fill: #1E1823;
   width: 24px;
   height: 24px;
+  transition: fill 250ms ease, stroke 250ms ease;
 }
 .footer__icon-twitter:hover, .footer__icon-twitter:focus {
   stroke: #FD9222;
@@ -1368,6 +980,7 @@ button {
   line-height: 114%;
   letter-spacing: -0.02em;
   color: #fff;
+  transition: color 250ms ease;
 }
 .footer__box-link:hover, .footer__box-link:focus {
   color: #FD9222;
@@ -1413,136 +1026,4 @@ button {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-}
-/*
-.footer {
-    font-family: "Montserrat", sans-serif;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: $section-background;
-
-
-
-    &__title {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 117%;
-        letter-spacing: -0.02em;
-        color: $background-color;
-        margin-bottom: 32px;
-    }
-
-    &__word {
-        color: $button-color;
-    }
-
-    &__wrap {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: 32px;
-    }
-
-    &__link-word {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 129%;
-        text-align: center;
-        color: $background-color;
-        display: block;
-    }
-
-
-    &__list-item {
-        color: $background-color;
-        margin-bottom: 4px;
-    }
-
-    &__tel {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 129%;
-        text-align: center;
-        color: $background-color;
-        margin-bottom: 4px;
-        display: block;
-        margin-top: 14px;
-
-        &:hover,
-        &:focus {
-            color: $button-color;
-        }
-    }
-
-
-
-    &__link-wrap {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    &__footer {
-        width: 24px;
-        height: 24px;
-        stroke: $background-color;
-        margin-top: 10px;
-    }
-
-    &__logo-wrap {
-        display: flex;
-        margin-left: 63px;
-        gap: 18px;
-        justify-content: space-between;
-    }
-
-    &__icon {
-        fill: $background-color;
-        width: 24px;
-        height: 24px;
-
-        &:hover,
-        &:focus {
-            fill: $button-color;
-        }
-    }
-
-    &__icon-twitter {
-        stroke: $background-color;
-        fill: $section-background;
-        width: 24px;
-        height: 24px;
-
-        &:hover,
-        &:focus {
-            stroke: $button-color;
-            fill: $section-background;
-
-        }
-    }
-
-    &__link-icon {
-        cursor: pointer;
-    }
-
-    &__box {
-        padding-top: 24px;
-    }
-
-    &__box-list {
-        display: flex;
-        gap: 24px;
-    }
-
-    &__box-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 114%;
-        letter-spacing: -0.02em;
-        color: $background-color;
-
-        &:hover,
-        &:focus {
-            color: $button-color;
-        }
-    }
-
-}*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -22,6 +22,7 @@
         letter-spacing: -0.02em;
         color: $text-color;
         cursor: pointer;
+        transition: color 250ms ease;
 
         &:hover,
         &:focus {
@@ -35,8 +36,9 @@
         height: 24px;
         stroke-width: 1px;
         stroke: $text-color;
-        fill: var(--background-color);
+        fill: $background-color;
         margin-left: 18px;
+        transition: stroke 250ms ease;
 
         &:hover,
         &:focus {
