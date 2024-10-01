@@ -322,6 +322,7 @@ button {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 32px;
+  max-width: 486px;
 }
 .taste__item {
   border-radius: 15px;
@@ -403,14 +404,17 @@ button {
     margin-left: 0px;
   }
   .product__actions {
+    box-sizing: border-box;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 79%;
     top: 0;
     left: 0;
     opacity: 0;
     padding: 23px 28px 33px 28px;
     background-color: #fff;
+    color: #111111;
+    font-size: 14px;
   }
   .taste__item:hover .product__actions {
     opacity: 1;
@@ -427,11 +431,28 @@ button {
     font-size: 10px;
     line-height: 129%;
     letter-spacing: -0.02em;
+    width: 214px;
+    margin-top: 14px;
   }
   .product__actions-box {
     font-weight: 400;
     font-size: 10px;
     line-height: 120%;
+    padding: 6px 16px 6px 16px;
+    color: #fff;
+    background-color: #FD9222;
+    display: inline-block;
+    border-radius: 35px;
+  }
+  .product__actions-benefits {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    padding: 6px 16px 6px 16px;
+    color: #111111;
+    display: inline-block;
+    border-radius: 35px;
+    border: 1px solid #FD9222;
   }
 }
 .made {
@@ -897,6 +918,9 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: #1E1823;
+  /* &__box-list {
+       gap: 24px;
+   }*/
 }
 .footer__title {
   font-weight: 500;
@@ -912,8 +936,6 @@ button {
 .footer__wrap {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
 }
 .footer__link-word {
   font-weight: 500;
@@ -975,10 +997,6 @@ button {
 }
 .footer__box {
   padding-top: 40px;
-}
-.footer__box-list {
-  display: flex;
-  gap: 24px;
 }
 .footer__box-item {
   margin-bottom: 18px;

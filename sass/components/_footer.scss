@@ -22,8 +22,7 @@
     &__wrap {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 32px;
-        display: flex;
-        justify-content: space-between;
+
     }
 
     &__link-word {
@@ -107,10 +106,9 @@
         padding-top: 40px;
     }
 
-    &__box-list {
-        display: flex;
+   /* &__box-list {
         gap: 24px;
-    }
+    }*/
 
     &__box-item {
         margin-bottom: 18px;
