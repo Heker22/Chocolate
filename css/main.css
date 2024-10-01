@@ -336,6 +336,8 @@ button {
   margin-bottom: 20px;
   color: #fff;
   flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
 }
 .taste__item:nth-child(2) {
   border-radius: 15px;
@@ -406,8 +408,8 @@ button {
   .product__actions {
     box-sizing: border-box;
     position: absolute;
-    width: 270px;
-    height: 79%;
+    max-width: 270px;
+    height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -415,9 +417,12 @@ button {
     background-color: #fff;
     color: #111111;
     font-size: 14px;
+    transition: transform 250ms ease, opacity 250ms ease;
+    transform: translateY(100%);
   }
   .taste__item:hover .product__actions {
     opacity: 1;
+    transform: translateY(0%);
   }
   .product__actions-title {
     font-weight: 600;
@@ -428,10 +433,10 @@ button {
   }
   .product__actions-text {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 129%;
     letter-spacing: -0.02em;
-    width: 214px;
+    max-width: 214px;
     margin-top: 14px;
   }
   .product__actions-box {
