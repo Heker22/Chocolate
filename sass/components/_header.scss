@@ -1,50 +1,95 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 32px;
+    padding-top: 20px;
+    padding-bottom: 14px;
     font-family: "Montserrat", sans-serif;
-
-
-    &__navigation {
-        display: flex;
-        justify-content: space-between;
-    }
+    position: relative;
 
     &__list {
-        display: flex;
-        gap: 24px;
-        margin-left: 120px;
+        display: none;
     }
-
-    &__link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 114%;
-        letter-spacing: -0.02em;
-        color: $text-color;
-        cursor: pointer;
-        transition: color 250ms ease;
-
-        &:hover,
-        &:focus {
-            color: $button-color;
-        }
-    }
-
 
     &__icon {
-        width: 24px;
-        height: 24px;
-        stroke-width: 1px;
-        stroke: $text-color;
-        fill: $background-color;
-        margin-left: 18px;
-        transition: stroke 250ms ease;
-
-        &:hover,
-        &:focus {
-            stroke: $button-color;
-        }
+        display: none;
     }
+}
 
+.js-close-menu {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.mobile-menu{
+    background-color: $section-background;
+    position: absolute;
+    width: 220px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) {
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        font-family: "Montserrat", sans-serif;
+
+
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__list {
+            display: flex;
+            gap: 24px;
+            margin-left: 120px;
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 114%;
+            letter-spacing: -0.02em;
+            color: $text-color;
+            cursor: pointer;
+            transition: color 250ms ease;
+
+            &:hover,
+            &:focus {
+                color: $button-color;
+            }
+        }
+
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+            stroke-width: 1px;
+            stroke: $text-color;
+            fill: $background-color;
+            margin-left: 18px;
+            transition: stroke 250ms ease;
+
+            &:hover,
+            &:focus {
+                stroke: $button-color;
+            }
+        }
+
+    }
 
 }

@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <!--
     <header class="header">
         <div class="container">
             <nav class="header__navigation">
@@ -49,8 +48,40 @@
                 </div>
             </nav>
         </div>
+        <button class="btn menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <div class="menu-container js-menu-container">
+            <button class="menu-toggle js-open-menu">
+                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a href="" class="mobile__link">Home</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="" class="mobile__link">How it's made </a>
+                </li>
+                <li class="mobile__item">
+                    <a href="" class="mobile__link">Our products</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="" class="mobile__link">Top sellers</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="" class="mobile__link">Chocolate is loved</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    -->
     <main>
         <section class="hero">
             <div class="container hero__box">
@@ -437,7 +468,7 @@
                     <li class="choco__item">
                         <picture class="choco__photo">
                             <source srcset="./img/icon.png, ./img/icon@2x.png" type="image/png">
-                            <img src="./img/icon.png" alt="" >
+                            <img src="./img/icon.png" alt="">
                         </picture>
                         <h3 class="choco__subtitle">
                             Victoria Dobrzhanska
@@ -460,7 +491,7 @@
                             hazelnut cream is smooth, and the chocolate is good.
                         </p>
                     </li>
-                    <li class="choco__item"> 
+                    <li class="choco__item">
                         <picture class="choco__photo">
                             <source srcset="./img/icon-third.png, ./img/icon-third@2x.png" type="image/png">
                             <img src="./img/icon-second.png" alt="">
@@ -554,6 +585,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
