@@ -25,16 +25,42 @@
 }
 
 
-.mobile-menu{
+.menu-container {
     background-color: $section-background;
     position: absolute;
     width: 220px;
-    
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    padding-top: 136px;
+    padding-left: 50px;
+    padding-bottom: 20px;
 }
 
+.js-open-menu{
+    position: absolute;
+    right: 5px;
+    margin-right: 20px;
+    background-color: transparent;
+    top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
 
+.menu-toggle-icon{
+    fill: $background-color;
+}
 
+.mobile__list{
 
+}
+
+.mobile__item{
+color: $background-color;
+margin-bottom: 24px;
+}
 
 
 
