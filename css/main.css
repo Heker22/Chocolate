@@ -99,8 +99,25 @@ button {
 }
 
 .mobile__item {
-  color: #fff;
   margin-bottom: 24px;
+}
+
+.mobile__link {
+  color: #fff;
+}
+
+.mobile__wrap {
+  position: absolute;
+  top: -10px;
+}
+
+.mobile__icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+.mobile__icon:hover, .mobile__icon:focus {
+  stroke: #FD9222;
 }
 
 @media screen and (min-width: 1200px) {

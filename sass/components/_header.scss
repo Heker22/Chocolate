@@ -37,7 +37,7 @@
     padding-bottom: 20px;
 }
 
-.js-open-menu{
+.js-open-menu {
     position: absolute;
     right: 5px;
     margin-right: 20px;
@@ -49,21 +49,35 @@
     height: 28px;
 }
 
-.menu-toggle-icon{
+.menu-toggle-icon {
     fill: $background-color;
 }
 
-.mobile__list{
+.mobile__list {}
 
+.mobile__item {
+    margin-bottom: 24px;
 }
 
-.mobile__item{
-color: $background-color;
-margin-bottom: 24px;
+.mobile__link {
+    color: $background-color;
 }
 
+.mobile__wrap{
+    position: absolute;
+    top: -10px;
+}
+.mobile__icon {
+    width: 18px;
+    height: 18px;
+    fill: $background-color;
+    
 
-
+    &:hover,
+    &:focus {
+        stroke: $button-color;
+    }
+}
 
 
 @media screen and (min-width:1200px) {
