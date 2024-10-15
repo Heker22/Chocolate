@@ -35,6 +35,8 @@
     padding-top: 136px;
     padding-left: 50px;
     padding-bottom: 20px;
+    transform: translateX(100%);
+    transition: transfrom 250ms ease;
 }
 
 .js-open-menu {
@@ -53,7 +55,12 @@
     fill: $background-color;
 }
 
-.mobile__list {}
+.menu-container.is-open {
+    transform: translateX(0);
+    transition: transform 250ms ease;
+}
+
+/*.mobile__list {}*/
 
 .mobile__item {
     margin-bottom: 24px;
@@ -61,11 +68,18 @@
 
 .mobile__link {
     color: $background-color;
+
+    &:hover,
+    &:focus {
+        color: $button-color;
+    }
 }
 
 .mobile__wrap{
     position: absolute;
-    top: -10px;
+    bottom: 20px;
+    display: flex;
+    gap: 18px;
 }
 .mobile__icon {
     width: 18px;
@@ -78,6 +92,7 @@
         stroke: $button-color;
     }
 }
+
 
 
 @media screen and (min-width:1200px) {
@@ -130,6 +145,14 @@
             }
         }
 
+    }
+
+    .menu-container{
+        display: none;
+    }
+
+    .js-close-menu{
+        display: none;
     }
 
 }
