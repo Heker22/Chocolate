@@ -168,6 +168,7 @@ button {
     fill: #fff;
     margin-left: 18px;
     transition: stroke 250ms ease;
+    display: inline-block;
   }
   .header__icon:hover, .header__icon:focus {
     stroke: #FD9222;

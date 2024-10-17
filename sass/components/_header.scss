@@ -138,6 +138,7 @@
             fill: $background-color;
             margin-left: 18px;
             transition: stroke 250ms ease;
+            display: inline-block;
 
             &:hover,
             &:focus {
