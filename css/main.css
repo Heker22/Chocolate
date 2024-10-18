@@ -64,12 +64,17 @@ button {
   height: 28px;
   position: absolute;
   top: 20px;
-  right: 150px;
+  right: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
+@media screen and (min-width: 734px) {
+  .js-close-menu {
+    right: 50px;
+  }
+}
 .menu-container {
   background-color: #1E1823;
   position: fixed;
@@ -133,7 +138,7 @@ button {
   stroke: #FD9222;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1166px) {
   .header {
     padding-top: 24px;
     padding-bottom: 32px;

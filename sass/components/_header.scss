@@ -18,12 +18,18 @@
     height: 28px;
     position: absolute;
     top: 20px;
-    right: 150px;
+    right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
+@media screen and (min-width:734px) {
+    .js-close-menu {
+        right: 50px;
+
+    }
+}
 
 .menu-container {
     background-color: $section-background;
@@ -76,17 +82,18 @@
     }
 }
 
-.mobile__wrap{
+.mobile__wrap {
     position: absolute;
     bottom: 20px;
     display: flex;
     gap: 18px;
 }
+
 .mobile__icon {
     width: 18px;
     height: 18px;
     fill: $background-color;
-    
+
 
     &:hover,
     &:focus {
@@ -96,7 +103,7 @@
 
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1166px) {
 
     .header {
         padding-top: 24px;
@@ -149,11 +156,11 @@
 
     }
 
-    .menu-container{
+    .menu-container {
         display: none;
     }
 
-    .js-close-menu{
+    .js-close-menu {
         display: none;
     }
 
