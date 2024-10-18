@@ -109,6 +109,10 @@
 
 
     }
+
+    .sellers__img:nth-child(3){
+        display: none;
+    }
 }
 
 @media screen and (min-width:1166px) {

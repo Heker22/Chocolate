@@ -83,7 +83,7 @@ button {
   background-color: #1E1823;
   position: fixed;
   width: 220px;
-  height: 100vh;
+  height: 100%;
   right: 0;
   top: 0;
   padding-top: 136px;
@@ -403,6 +403,7 @@ button {
 }
 .taste {
   padding-bottom: 72px;
+  padding-top: 72px;
   font-family: "Montserrat", sans-serif;
 }
 .taste__title {
@@ -476,6 +477,7 @@ button {
 @media screen and (min-width: 734px) {
   .taste {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
   .taste__title {
     font-size: 24px;
@@ -634,6 +636,9 @@ button {
   }
   .made__wrap {
     padding: 32px;
+  }
+  .made__list {
+    width: 452px;
   }
   .made__item {
     margin-bottom: 24px;
@@ -822,6 +827,9 @@ button {
     width: 120px;
     margin: 0;
     height: 50px;
+  }
+  .sellers__img:nth-child(3) {
+    display: none;
   }
 }
 @media screen and (min-width: 1166px) {
@@ -1028,8 +1036,8 @@ button {
   padding-bottom: 32px;
   background-color: #1E1823;
   /* &__box-list {
-       gap: 24px;
-   }*/
+      gap: 24px;
+  }*/
 }
 .footer__title {
   font-weight: 500;
@@ -1161,5 +1169,8 @@ button {
   .footer {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .footer__wrap {
+    gap: 543px;
   }
 }/*# sourceMappingURL=main.css.map */

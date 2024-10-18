@@ -88,7 +88,7 @@
         fill: $section-background;
         width: 24px;
         height: 24px;
-        transition: fill 250ms ease, stroke 250ms ease ;
+        transition: fill 250ms ease, stroke 250ms ease;
 
         &:hover,
         &:focus {
@@ -106,7 +106,7 @@
         padding-top: 40px;
     }
 
-   /* &__box-list {
+    /* &__box-list {
         gap: 24px;
     }*/
 
@@ -187,6 +187,9 @@
         padding-top: 32px;
         padding-bottom: 32px;
 
-  }     
+        &__wrap {
+            gap: 543px;
+        }
+    }
 
-} 
+}
