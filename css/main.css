@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color-general);
   padding: 0;
@@ -1136,7 +1140,7 @@ button {
   }
   .footer__wrap {
     display: flex;
-    justify-content: space-between;
+    gap: 124px;
   }
   .footer__logo-wrap {
     margin-left: 50px;
