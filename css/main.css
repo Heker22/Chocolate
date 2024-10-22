@@ -87,7 +87,7 @@ button {
   right: 0;
   top: 0;
   padding-top: 136px;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-bottom: 20px;
   z-index: 999;
   transform: translateX(100%);
@@ -474,6 +474,10 @@ button {
   margin-left: -45px;
 }
 
+.product__actions {
+  display: none;
+}
+
 @media screen and (min-width: 734px) {
   .taste {
     padding-bottom: 100px;
@@ -498,19 +502,6 @@ button {
   }
 }
 @media screen and (min-width: 1166px) {
-  .taste {
-    padding-top: 128px;
-  }
-  .taste__list {
-    flex-wrap: nowrap;
-  }
-  .taste__item {
-    width: 336px;
-    position: relative;
-  }
-  .taste__subtitle {
-    margin-left: 0px;
-  }
   .product__actions {
     box-sizing: border-box;
     position: absolute;
@@ -525,6 +516,7 @@ button {
     font-size: 14px;
     transition: transform 250ms ease, opacity 250ms ease;
     transform: translateY(100%);
+    display: block;
   }
   .taste__item:hover .product__actions {
     opacity: 1;
@@ -564,6 +556,19 @@ button {
     display: inline-block;
     border-radius: 35px;
     border: 1px solid #FD9222;
+  }
+  .taste {
+    padding-top: 128px;
+  }
+  .taste__list {
+    flex-wrap: nowrap;
+  }
+  .taste__item {
+    width: 336px;
+    position: relative;
+  }
+  .taste__subtitle {
+    margin-left: 0px;
   }
 }
 .made {
@@ -701,7 +706,7 @@ button {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   padding: 8px 20px;
-  width: 94px;
+  width: 100px;
   margin: 0 auto;
   font-weight: 600;
   font-size: 14px;
@@ -810,7 +815,7 @@ button {
     margin-bottom: 50px;
   }
   .sellers__item:last-child {
-    display: block;
+    display: none;
   }
   .sellers__list {
     display: flex;
@@ -852,6 +857,9 @@ button {
     width: 200px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+  .sellers__item:last-child {
+    display: block;
   }
 }
 .choco {

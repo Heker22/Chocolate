@@ -44,7 +44,7 @@
         flex-direction: column;
         overflow: hidden;
         cursor: pointer;
-        
+
     }
 
     &__item:nth-child(2) {
@@ -81,8 +81,12 @@
         margin-left: -45px;
     }
 
+
 }
 
+.product__actions {
+    display: none;
+}
 
 @media screen and (min-width: 734px) {
     .taste {
@@ -117,26 +121,6 @@
 
 @media screen and (min-width:1166px) {
 
-    .taste {
-        padding-top: 128px;
-
-
-        &__list {
-            flex-wrap: nowrap;
-        }
-
-        &__item {
-            width: 336px;
-            position: relative;
-        }
-
-        &__subtitle {
-            margin-left: 0px;
-        }
-
-
-    }
-
     .product__actions {
         box-sizing: border-box;
         position: absolute;
@@ -151,6 +135,7 @@
         font-size: 14px;
         transition: transform 250ms ease, opacity 250ms ease;
         transform: translateY(100%);
+        display: block;
 
     }
 
@@ -197,4 +182,26 @@
         border-radius: 35px;
         border: 1px solid $button-color;
     }
+
+    .taste {
+        padding-top: 128px;
+
+
+        &__list {
+            flex-wrap: nowrap;
+        }
+
+        &__item {
+            width: 336px;
+            position: relative;
+        }
+
+        &__subtitle {
+            margin-left: 0px;
+        }
+
+
+    }
+
+
 }

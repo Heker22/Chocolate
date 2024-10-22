@@ -82,7 +82,7 @@
         }
 
         &__item:last-child {
-            display: block;
+            display: none;
         }
 
 
@@ -142,7 +142,9 @@
 
         }
 
-
+        &__item:last-child {
+            display: block;
+        }
     }
 }
 
